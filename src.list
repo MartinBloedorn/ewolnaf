@@ -1,0 +1,24 @@
+# Example file for linked resources list
+#
+# Comments and nested variables are supported
+
+SDK_ROOT := C:/User/JohnDoe/workspace/nRF52_SDK
+COMP_DIR := $(SDK_ROOT)/components
+
+# Entries must be grouped in folders, such as root '/', ...
+/: # this is the root, not mandatory
+$(COMP_DIR)/libraries/button/app_button.c
+$(COMP_DIR)/libraries/util/app_error.c
+$(COMP_DIR)/libraries/fifo/app_fifo.c
+$(COMP_DIR)/libraries/timer/app_timer.c
+
+# ..and 'src/ble' subfolder. 
+src/ble/: 
+$(SDK_ROOT)/components/ble/common/ble_advdata.c # keep a whitespace between comments
+$(SDK_ROOT)/components/ble/ble_advertising/ble_advertising.c
+$(SDK_ROOT)/components/ble/common/ble_conn_params.c
+$(SDK_ROOT)/components/ble/ble_services/ble_nus/ble_nus.c
+$(SDK_ROOT)/components/ble/common/ble_srv_common.c
+
+# These groups will appear as folders in the Eclipse IDE.
+# A .project.backup file will be automatically generated after pushing any changes.

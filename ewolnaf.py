@@ -58,7 +58,7 @@ def parseProjectFile(projdir):
                 prjlist[m.group('folder')].append((m.group('name'), link.find('location').text))
             else:
                 print('Unrecognized <name>: {}'.format(link.find('name').text))
-    print(prjlist)    
+    #print(prjlist)    
     return prjlist
 
 

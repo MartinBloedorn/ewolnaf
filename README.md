@@ -35,11 +35,13 @@ Create a `src.list` file, or modify the included one (the file name doesn't real
     /:
     $(SDK_ROOT)/sdk_config.h
     
-Syntax is Makefile-compatible, so you cant copy+paste stuff from existing Makefiles. Once you have your list, push the modifications to the project:
+Syntax is Makefile-compatible, so you cant copy+paste stuff from existing Makefiles. Once you have your list, close the project in the Eclipse IDE, then push the modifications to the project:
 
     $ ./ewolnaf.py /path/to/project /path/of/src.list --push
   
-You will be prompted to confirm the operation, and a `.project.backup` file will be created. If you wish to edit existing linked resources, you can first create a `src.list` file from the resources already linked to your project:
+You will be prompted to confirm the operation, and a `.project.backup` file will be created. Open the project again, and you're golden (refreshing the file system with F5 may be necessary). 
+
+If you wish to edit existing linked resources, you can first create a `src.list` file from the resources already linked to your project:
 
     $ ./ewolnaf.py /path/to/project /path/of/src.list --pull
     

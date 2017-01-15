@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 """
-ewol - Eclipse Workaround for Linked Resources
+ewolnaf - Eclipse Workaround for Linked Resources that Nobody Asked For
 
 Manage linked resources - e.g. source files, linker scripts, ASM-files - for Eclipse.
 
@@ -64,7 +64,8 @@ def parseProjectFile(projdir):
 
 def writeProjectFile(projdir, prjlist):
     """
-    Great documentation.
+    Writes the .project.backup and the modified .project file.
+    \TODO Prettify the XML output (without using lxml)
     """
     tree = ET.parse(projdir + '/.project')    
     root = tree.getroot()
@@ -86,7 +87,7 @@ def writeProjectFile(projdir, prjlist):
 
 def parseSourceList(srcfile):
     """
-    Does stuff.
+    Self-explanatory. Gotta love regexps. 
     """
     lineno   = 0
     currfldr = '/'

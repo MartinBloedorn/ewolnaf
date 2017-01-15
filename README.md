@@ -8,7 +8,7 @@ The problem, however, is that it is a per-project procedure, that can get tediou
 
 The point with `ewolnaf` is to be able do quickly pull in a list of external resources (source files, headers, ASM files, etc.) from Makefile-like list into your workspace. Just close your Eclipse project, run `ewolnaf` and open it again to see the resources.
 
-![Yeah. Click your way throug this.](http://martinvb.com/wp/wp-content/uploads/2017/01/ewolnaf.jpg)
+![Yeah. Good luck adding this per hand.](http://martinvb.com/wp/wp-content/uploads/2017/01/ewolnaf.jpg) 
 
 ## I didn't ask for this. 
 
